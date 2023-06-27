@@ -1,0 +1,492 @@
+/* montserrat-regular - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 400;
+    src: url("./fonts/montserrat-v25-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* montserrat-700 - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 700;
+    src: url("./fonts/montserrat-v25-latin-700.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: "Sedan";
+    font-style: normal;
+    font-weight: 400;
+    src: url("./fonts/Sedan.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    user-select: none;
+    box-sizing: border-box;
+  }
+  
+  :root {
+  }
+  
+  html,
+  body {
+    width: 100%;
+    height: 100%;
+  }
+  
+  body {
+    font-weight: 400;
+    font-family: "Montserrat", sans-serif;
+  }
+  
+  ul li,
+  ol li {
+    list-style: none;
+  }
+  
+  image,
+  img {
+    width: 100%;
+    height: 100%;
+    display: block;
+  }
+  
+  button {
+    border: none;
+    cursor: pointer;
+    background: transparent;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  .container {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1520px;
+  }
+  
+  .about__navbar-hero {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("./images/about__backgraund-img.svg");
+  }
+  
+  #about-navbar__section {
+  }
+  
+  .about-navbar-content {
+    display: flex;
+    padding: 15px 0;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .about-navbar__menu {
+    gap: 50px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .about-navbar__list {
+  }
+  
+  .about-navbar__link {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 29px;
+    position: relative;
+    letter-spacing: 0em;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+    color: #fff;
+  }
+  
+  .about-navbar__logo {
+    width: 250px;
+  }
+  
+  .about-navbar__link::before {
+    content: "";
+    position: absolute;
+    width: 120%;
+    height: 4px;
+    border-radius: 4px;
+    background: #dba865;
+    bottom: 0;
+    left: 0;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .about-navbar__link:hover::before {
+    transform-origin: left;
+    transform: scaleX(1);
+  }
+  
+  .about-navbar__dropbtn {
+    margin: 0 25px;
+    width: 100px;
+    padding: 16px;
+    font-size: 16px;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  .about-navbar__dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .about-navbar__dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+  
+  .about-navbar__dropdown-content a {
+    color: #252525;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .about-navbar__dropdown-content a:hover {
+    background-color: #dba865;
+  }
+  
+  .about-navbar__dropdown:hover .about-navbar__dropdown-content {
+    display: block;
+  }
+  
+  .about-navbar__dropdown:hover .about-navbar__dropbtn {
+  }
+  
+  #about-hero__section {
+  }
+  
+  .about-hero__content {
+    gap: 30px;
+    display: flex;
+    padding: 150px 20px 160px;
+    flex-direction: column;
+  }
+  
+  .about-hero__name {
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 44px;
+    letter-spacing: 0em;
+    color: #dba865;
+  }
+  .about-hero__title {
+    width: 1000px;
+    font-size: 100px;
+    font-weight: 400;
+    line-height: 139px;
+    letter-spacing: 0em;
+    font-family: "Sedan", sans-serif;
+    color: #fff;
+  }
+  
+  #about-team__section {
+    color: #fff;
+    padding: 100px 0;
+    background: rgb(33, 43, 72);
+    background: linear-gradient(
+      90deg,
+      rgba(33, 43, 72, 1) 0%,
+      rgba(87, 110, 129, 1) 50%,
+      rgba(87, 110, 129, 1) 50%,
+      rgba(33, 43, 72, 1) 100%
+    );
+    /* background: linear-gradient(
+      90deg,
+      rgba(41, 110, 255, 1) 0%,
+      rgba(87, 110, 129, 1) 30%,
+      rgba(60, 116, 157, 1) 70%,
+      rgba(0, 128, 217, 1) 100%
+    ); */
+  }
+  
+  .about-team__corusel {
+    height: 700px;
+    padding: 0px 0px;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .about-team__cart {
+    width: 90%;
+    height: 500px;
+    position: relative;
+    border-radius: 25px 25px 0 0;
+    background: #252525;
+    padding: 15px 15px 0 15px;
+  }
+  
+  .about-team__cart_img {
+    border-radius: 15px 15px 0 0;
+    z-index: -1;
+    display: flex;
+    align-items: center;
+  }
+  
+  .about-team__cart_name-job {
+    left: 0;
+    right: 0;
+    bottom: 0px;
+    width: 100%;
+    height: 25%;
+    z-index: 10;
+    display: flex;
+    padding: 10px;
+    text-align: center;
+    position: absolute;
+    align-items: center;
+    flex-direction: column;
+    background: #2c344ce5;
+  }
+  
+  .about-team__cart-name {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 39px;
+    letter-spacing: 0em;
+    color: #fff;
+  }
+  .about-team__cart-job {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 29px;
+    letter-spacing: 0em;
+    color: #fff;
+  }
+  
+  .about-team__cart_hover {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 50;
+    width: 100%;
+    height: 75%;
+    display: none;
+    font-size: 80px;
+    overflow: hidden;
+    color: #dba865;
+    /* transition: 400ms; */
+    position: absolute;
+    border-radius: 25px 25px 0 0;
+    background: #2c344ce5;
+  }
+  
+  .about-team__cart:hover {
+    transition: 200ms;
+  }
+  
+  .about-team__cart:hover .about-team__cart_hover {
+    transition: 200ms;
+    display: block;
+  }
+  .about-team__cart_hover__social {
+    gap: 20px;
+    display: flex;
+    margin-top: 150px;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .about-team__cart_hover__social i {
+    color: #dba865;
+  }
+  
+  .about-team__cart_hover__button {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 29px;
+    letter-spacing: 0em;
+    color: #fff;
+  
+    transition: 400ms;
+    padding: 20px 100px;
+    border: 5px solid #dba865;
+  }
+  
+  .about-team__cart_hover__button:hover {
+    border-radius: 40px;
+    background: #dba865;
+    transition: 200ms;
+  }
+  
+  #about-about__section {
+    color: #fff;
+    width: 100%;
+    padding: 40px 0 80px;
+    background: linear-gradient(
+      90deg,
+      rgba(33, 43, 72, 1) 0%,
+      rgba(87, 110, 129, 1) 50%,
+      rgba(87, 110, 129, 1) 50%,
+      rgba(33, 43, 72, 1) 100%
+    );
+  }
+  
+  .about-about__content {
+    /* gap: 50px; */
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .about-about__content div {
+    gap: 100px;
+    margin-bottom: 100px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .about-about__title {
+    max-width: 770px;
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 39px;
+    letter-spacing: 0em;
+  }
+  
+  .about-about__name,
+  .about-team__name {
+    font-family: Sedan;
+    font-size: 84px;
+    font-weight: 400;
+    line-height: 90px;
+    letter-spacing: 0em;
+    margin-bottom: 50px;
+  }
+  
+  #about-help__section {
+    color: #fff;
+    padding: 83px 0;
+  }
+  
+  .kl {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("./images/help.svg");
+  }
+  
+  .about-help__content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .about-help__title {
+    font-family: Sedan;
+    font-size: 96px;
+    font-weight: 400;
+    line-height: 90px;
+    letter-spacing: 0em;
+    text-align: center;
+    max-width: 970px;
+    margin-bottom: 40px;
+  }
+  
+  .about-help__subtitle {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 29px;
+    letter-spacing: 0em;
+    text-align: center;
+    max-width: 1150px;
+    margin-bottom: 85px;
+  }
+  
+  .about-help__button {
+    color: #fff;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 29px;
+    transition: 400ms;
+    letter-spacing: 0em;
+    padding: 35px 100px;
+    border: 5px solid #dba865;
+  }
+  
+  .about-help__button:hover {
+    border-radius: 60px;
+    background: #dba865;
+    transition: 200ms;
+  }
+  
+  #about-footer__section {
+    color: #fff;
+    margin-top: 80px;
+    width: 100%;
+  }
+  
+  .about-footer__content {
+    gap: 80px;
+    display: flex;
+  }
+  
+  .about-footer__logo-img {
+    width: 500px;
+  }
+  
+  .about-footer__logo-menu {
+    margin-top: 50px;
+  }
+  
+  .about-footer__logo-title {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 29px;
+    letter-spacing: 0em;
+    margin-bottom: 20px;
+  }
+  
+  .about-footer__logo-list,
+  .about-footer__logo-subtitle {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 29px;
+    letter-spacing: 0em;
+  }
+  
+  .about-footer__logo-link {
+    color: #fff;
+  }
+  
+  .about-footer__logo-social {
+    gap: 20px;
+    display: flex;
+  }
+  
+  #tagline-section {
+    color: #fff;
+    width: 100%;
+    display: flex;
+    padding: 35px 0;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 29px;
+    letter-spacing: 0em;
+    align-items: center;
+    background: #1c243c;
+    justify-content: center;
+  }
+  

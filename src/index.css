@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@font-face {
+  font-family: Sedan;
+  src: url("fonts/Sedan-Regular.ttf") format("opentype");
+}
+@layer base {
+  .nav-link {
+    @apply text-white font-montserrat font-normal relative text-[18px] before:absolute before:inline-block hover:before:w-[100%] before:w-[0%] before:h-[3px] before:bg-[#DBA865] before:transition-all before:rounded-lg  before:-mb-9 hover:text-[#DBA865] before:bottom-8;
+  }
+  .hero {
+    @apply bg-[url('./assets/png/hero-bg-img.png')] bg-no-repeat bg-center bg-cover;
+  }
+  .max-width {
+    @apply max-w-[1500px] mx-auto px-20;
+  }
+  .navbar {
+    @apply absolute top-0 w-full py-6 bg-transparent;
+  }
+  .btn-free-konst {
+    @apply py-7 px-20 border-[5px] border-[#DBA865] text-white;
+  }
+  .one-slick-item {
+    @apply !flex flex-col items-center justify-center items-center !w-[90%] bg-[#252525] px-6 py-[40px] mx-[80px];
+  }
+  .slick-two-item {
+    @apply !flex flex-col justify-end items-end !w-[90%] bg-transparent px-6 py-[40px] mx-[80px];
+  }
+  .item-text {
+    @apply text-center;
+  }
+  .footer {
+    @apply bg-[url('./assets/png/footer-bg.png')]  bg-no-repeat bg-center bg-cover;
+  }
+  .norml-text {
+    @apply font-montserrat font-normal text-lg text-white;
+  }
+  /* ... */
+}
