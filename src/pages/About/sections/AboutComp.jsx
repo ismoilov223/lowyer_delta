@@ -3,7 +3,7 @@ import React from "react";
 import about1 from "../images/about1.svg";
 import about2 from "../images/about2.svg";
 
-const About = () => {
+const AboutComp = () => {
   return (
     <section id="about-about__section">
       <div className="container about-about__content">
@@ -40,4 +40,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default AboutComp;
