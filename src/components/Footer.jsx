@@ -6,10 +6,10 @@ import linkinIcon from "../assets/svg/icon_linkedin.svg"
 import TwitIcon from "../assets/svg/twit_icon.png"
 const Footer = () => {
   return (
-    <div className="footer pb-14">
+    <div className="footer pb-14 pt-12">
       <div className="max-width">
-        <div className="title-box flex flex-col items-center w-[70%] mx-auto mb-32">
-          <h1 className="font-sedan font-normal text-white text-[70px] text-center">
+        <div className="title-box flex flex-col items-center w-[70%] mx-auto mb-20 mt-8">
+          <h1 className="font-sedan font-normal text-white text-[55px] text-center">
             Sizga ko‘mak berishga doim tayyormiz
           </h1>
           <p className="font-montserrat font-normal text-lg text-white text-center mb-11">
