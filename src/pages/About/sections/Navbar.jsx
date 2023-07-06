@@ -3,6 +3,7 @@ import React from "react";
 import navbarLogo from "../images/navbar-logo.png";
 
 import avatar from "../images/avatar.jpg";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
@@ -13,24 +14,24 @@ const Navbar = () => {
         </a>
         <ul className="about-navbar__menu">
           <li className="about-navbar__list">
-            <a href="" className="about-navbar__link">
+            <Link className="about-navbar__link" to={"/"}>
               Home
-            </a>
+            </Link>
           </li>
           <li className="about-navbar__list">
-            <a href="#" className="about-navbar__link">
+            <Link className="about-navbar__link" to={"/about"}>
               About
-            </a>
+            </Link>
           </li>
           <li className="about-navbar__list">
-            <a href="" className="about-navbar__link">
-              contact
-            </a>
+            <Link className="about-navbar__link" to={"/contact"}>
+              Contact
+            </Link>
           </li>
           <li className="about-navbar__list">
-            <a href="" className="about-navbar__link">
-              chat
-            </a>
+            <Link className="about-navbar__link" to={"/chat"}>
+              Chat
+            </Link>
           </li>
           <li className="about-navbar__list  about-navbar__dropdown ">
             <img src={avatar} alt="" className="about-navbar__dropbtn" />
