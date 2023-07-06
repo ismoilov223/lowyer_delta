@@ -11,7 +11,7 @@ const ChatAll = () => {
             <ChatAi></ChatAi>
           </div>
           <div className="self-end justify-center">
-            <ChatInput></ChatInput>
+            {/* <ChatInput></ChatInput> */}
           </div>
         </div>
       </div>
