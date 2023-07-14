@@ -5,12 +5,10 @@ import ChatInput from "./ChatInput";
 const ChatAll = () => {
   return (
     <div>
-      <div className="h-full w-full flex">
-        <div className="flex h-full gap-10">
-          <div className="self-end">
+      <div className="">
+        <div className="flex gap-10">
+          <div className="flex mt-16 gap-4">
             <ChatAi></ChatAi>
-          </div>
-          <div className="self-end justify-center">
             <ChatInput></ChatInput>
           </div>
         </div>

@@ -4,7 +4,7 @@ import ChatAll from "../chatcomp/ChatAll";
 
 const Chat = () => {
   return (
-    <div className="flex">
+    <div className="flex max-w-full">
       <div className="w-[400px] mt-[60px] conta">
         <div class="bg-[#2C344C] ">
           <div class="border-b-4 sticky top-0 example">
@@ -200,7 +200,11 @@ const Chat = () => {
         </div>
       </div>
       {/* right */}
-      <ChatAll></ChatAll>
+      <div className="flex justify-center">
+        <div className="">
+          <ChatAll></ChatAll>
+        </div>
+      </div>
     </div>
   );
 };
