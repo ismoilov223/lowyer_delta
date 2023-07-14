@@ -3,7 +3,7 @@ import aiimg from "../assets/aiimg.svg";
 
 const ChatAi = () => {
   return (
-    <div className="ml-10">
+    <div className="ml-10 h-full w-full">
       <img src={aiimg} alt="" />
     </div>
   );
