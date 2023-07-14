@@ -3,6 +3,7 @@ import lowyerImg from "../assets/png/lawyer-img.png";
 import MultipleItems from "./component/MultipleSlick";
 import questionimg from "../assets/png/question-img.png";
 import SlickTwo from "./component/SlickTwo";
+
 const Main = () => {
   return (
     <div className="main w-full bg-[#1C243C]">
@@ -58,7 +59,7 @@ const Main = () => {
               <div className="random-box w-[90%] flex items-center justify-between pb-[110px]">
                 <div className="box-item flex items-center flex-col">
                   <h1 className="text-[#DBA865] text-[110px] font-normal font-montserrat">
-                    300+
+                   300+
                   </h1>
                   <p className="font-montserrat font-normal text-xl text-center text-white ">
                     Umumiy kelib tushgan murojaatlar

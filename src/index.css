@@ -19,7 +19,7 @@
     @apply absolute top-0 w-full py-6 bg-transparent;
   }
   .btn-free-konst {
-    @apply py-7 px-20 border-[5px] border-[#DBA865] text-white;
+    @apply py-7 px-20 border-[5px] !border-[#DBA865] border-solid text-white;
   }
   .one-slick-item {
     @apply !flex flex-col items-center justify-center items-center !w-[90%] bg-[#252525] px-6 py-[40px] mx-[80px];
@@ -35,6 +35,9 @@
   }
   .norml-text {
     @apply font-montserrat font-normal text-lg text-white;
+  }
+  body{
+    @apply select-all;
   }
   /* ... */
 }

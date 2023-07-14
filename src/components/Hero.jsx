@@ -16,7 +16,9 @@ const Hero = () => {
               Sizga kerakli joyda, kerakli vaqtda ko’mak berishga berishga
               tayyormiz. Buning uchun biz bog’lanishingiz kifoya
             </p>
-            <button className="btn-free-konst">Bepul Konsultatsiya</button>
+            <button className="btn-free-konst">
+              Bepul Konsultatsiya
+            </button>
           </div>
         </div>
       </div>
